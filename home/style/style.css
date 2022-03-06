@@ -835,7 +835,7 @@ footer hr {
     top: 0;
   }
   .back-video video {
-    width: auto;
+    width: 310%;
   }
   .menu {
     display: none;
@@ -914,6 +914,73 @@ footer hr {
   .block-2 img {
     width: 300px;
   }
+  .paragrafs {
+    padding: 100px 0;
+  }
+  .paragrafs-buttons button {
+    font-size: 15px;
+    width: 150px;
+    margin-right: 10px;
+  }
+  .carousel {
+    width: 500px;
+  }
+  .carousel .title {
+    font-size: 25px;
+    margin-bottom: -10px;
+  }
+  .carousel button i {
+    font-size: 33px;
+  }
+  .web-logos {
+    height: 170px;
+  }
+  .web-logos img {
+    width: 100px;
+  }
+  .web-logos h1 {
+    font-size: 19px;
+  }
+  .web-logos .logos-item {
+    width: 110px;
+    margin-right: 20px;
+  }
+  .web-logos .logos-item:last-child {
+    margin-right: 0;
+  }
+  .games-logos {
+    height: 170px;
+  }
+  .games-logos img {
+    width: 90px;
+  }
+  .games-logos h1 {
+    font-size: 19px;
+  }
+  .games-logos .games-item {
+    width: 100px;
+    margin-right: 40px;
+  }
+  .games-logos .games-item:last-child {
+    margin-right: 0;
+  }
+  .contact h1 {
+    font-size: 25px;
+  }
+  .contact form {
+    width: 450px;
+  }
+  .contact form input, .contact form textarea {
+    width: 450px;
+  }
+  footer .fut-img img {
+    width: 200px;
+    margin-top: -133px;
+    right: 10px;
+  }
+  footer ul:nth-child(4) {
+    display: none;
+  }
   .main-about {
     display: none;
   }
@@ -921,7 +988,7 @@ footer hr {
 
 @media screen and (max-width: 540px) {
   .back-video video {
-    width: auto;
+    width: 300%;
   }
   .home-text {
     max-width: 380px;
@@ -1144,6 +1211,23 @@ footer hr {
 @media screen and (max-width: 375px) {
   .back-video video {
     width: auto;
+  }
+  .home-text {
+    max-width: 320px;
+  }
+  .home-text h1 {
+    font-size: 40px;
+  }
+  .home-text p {
+    font-size: 12px;
+    margin-top: 15px;
+  }
+  .home-text hr {
+    width: 120px;
+  }
+  .home-text i {
+    font-size: 30px;
+    margin-left: 0;
   }
   #mob-about {
     width: 300px;
