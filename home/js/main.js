@@ -32,13 +32,6 @@ window.addEventListener("scroll", function(){
     menuStiky.classList.toggle('stiky', scrollY > 100)
 });
 
-let loader = document.querySelector('.loader');
-
-window.addEventListener("load", function(){
-    loader.style.display = 'none'
-    this.scrollbars.style.display = 'none'
-});
-
 
 let mobMenu = document.querySelector('.mob-menu');
 
@@ -72,3 +65,45 @@ function activeMobMenu(){
 }
 activeMobMenu();
 window.addEventListener("scroll", activeMobMenu);
+
+let linkGame = document.querySelector('#linkgame');
+let linkWeb = document.querySelector('#linkweb');
+
+linkWeb.addEventListener("click", function(){
+    game.classList.remove('but-active');
+    web.classList.add('but-active');
+
+    gameSec.style.display = 'none'
+    webSec.style.display = 'block'
+});
+
+linkGame.addEventListener("click", function(){
+    web.classList.remove('but-active');
+    game.classList.add('but-active');
+
+    gameSec.style.display = 'block'
+    webSec.style.display = 'none'
+});
+
+(function () {
+    emailjs.init("user_Qz07KcIqlZNoyNuGl");
+})();
+
+function sendmail() {
+    let fullName = document.getElementById("name").value;
+    let userEmail = document.getElementById("email").value;
+    let userMessage = document.getElementById("message").value;
+
+        var contactParams = {
+            from_name: fullName,
+            from_email: userEmail,
+            message: userMessage
+        };
+
+        emailjs.send('service_srulwsk', 'template_3ddr04s', contactParams).then(function (res) {
+            location.reload();
+        })
+}
+
+
+

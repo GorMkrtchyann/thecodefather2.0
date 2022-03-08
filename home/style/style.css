@@ -318,6 +318,11 @@ html {
   padding: 100px 0;
 }
 
+.paragrafs .paragrafs-items a {
+  text-decoration: none;
+  color: #000;
+}
+
 .paragrafs-buttons {
   text-align: center;
 }
@@ -625,6 +630,15 @@ footer hr {
   color: #fff;
 }
 
+@media screen and (max-width: 1920px) {
+  .main-about {
+    margin-top: -70px;
+  }
+  .main-about .about-item {
+    margin-top: 150px;
+  }
+}
+
 @media screen and (max-width: 1600px) {
   .main-about {
     margin-top: -20px;
@@ -835,7 +849,7 @@ footer hr {
     top: 0;
   }
   .back-video video {
-    width: 310%;
+    width: 400%;
   }
   .menu {
     display: none;
@@ -988,7 +1002,7 @@ footer hr {
 
 @media screen and (max-width: 540px) {
   .back-video video {
-    width: 300%;
+    width: 350%;
   }
   .home-text {
     max-width: 380px;
@@ -1209,9 +1223,6 @@ footer hr {
 }
 
 @media screen and (max-width: 375px) {
-  .back-video video {
-    width: auto;
-  }
   .home-text {
     max-width: 320px;
   }
