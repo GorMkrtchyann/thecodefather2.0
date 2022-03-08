@@ -664,7 +664,7 @@ footer hr {
     background: #090979;
     -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
             clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-    margin-top: 100px;
+    margin-top: 150px;
   }
   .main-about .about-item {
     margin-left: auto;
