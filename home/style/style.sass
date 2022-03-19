@@ -196,80 +196,245 @@ html
         width: 330px
 .block-1
     margin-top: 250px
+
+.paragrafs2
+    display: none
 .paragrafs
     padding: 100px 0
-    .paragrafs-items
-        a
-            text-decoration: none
-            color: #000
-.paragrafs-buttons
-    text-align: center
-    button
-        font-size: 20px
-        background: $transparent
-        width: 200px
-        padding: 7px 0
-        border: none
-        border-bottom: 3px solid $secondColor
-        margin-right: 30px
-        &:last-child
-            margin-right: 0
-.carousel
-    width: 800px
-    text-align: center
-    margin: auto
-    .title
-        font-size: 30px
-        color: $secondColor
-        padding: 30px 0
-    button
-        opacity: 1
-        i
-            color: $secondColor
-            font-size: 40px
-.web-logos
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 200px
-    transition: 0.3s
-    img
-        width: 130px
-    h1
-        font-size: 25px
-    .logos-item
-        width: 140px
-        text-align: center
-        text-transform: uppercase
-        font-weight: bold
-        margin-right: 50px
-        &:last-child
-            margin-right: 0
-    
-.games-logos
-    display: flex
-    justify-content: center
-    align-items: center
-    height: 230px
-    transition: 0.3s
-    img
-        width: 130px
-        margin: 0 auto
-    h1
-        font-size: 22px
-    .games-item
-        width: 140px
-        text-align: center
-        text-transform: uppercase
-        font-weight: bold
-        margin-right: 50px
-        &:last-child
-            margin-right: 0
-.but-active
-    color: $secondColor
-    font-weight: 600
-.game
-    display: none
+    .container
+        width: 90%
+        position: relative
+        display: flex
+        justify-content: space-around
+        .items
+            width: 320px
+            position: relative
+            text-align: center
+            .icons
+                background: $secondColor
+                width: 320px
+                height: 320px
+                border-radius: 300px
+                position: relative
+                text-align: center
+                transition: 0.3s
+                opacity: 0
+                i
+                    font-size: 35px
+                    color: #fff
+                    position: absolute
+                    cursor: pointer
+                    &:hover
+                        background: #fff
+                        color: $secondColor
+                        width: 80px
+                        height: 80px
+                        border-radius: 50px
+                        padding-top: 10px
+                        border: 3px solid $secondColor
+                        font-size: 45px
+                .fa-html5
+                    margin-left: -10px
+                    margin-top: 10px
+                    &:hover
+                        margin-left: -37px
+                        margin-top: -30px
+                        padding-top: 15px
+                        color: #fa6400
+                .fa-css3-alt
+                    margin-top: 125px
+                    margin-left: 115px
+                    &:hover
+                        margin-top: 105px
+                        padding-top: 15px
+                        color: #006efd
+                .fa-bootstrap
+                    margin-top: 250px
+                    margin-left: 55px
+                    &:hover
+                        padding-top: 15px
+                        margin-top: 240px
+                        margin-left: 50px
+                        color: #8400ff
+                .fa-sass
+                    margin-top: 250px
+                    margin-left: -85px
+                    &:hover
+                        padding-top: 15px
+                        margin-left: -120px
+                        color: #d400ff
+                .fa-js
+                    margin-top: 125px
+                    margin-left: -145px
+                    &:hover
+                        padding-top: 15px
+                        margin-top: 110px
+                        margin-left: -195px
+                        color: #ffd900
+            @keyframes rot
+                0%
+                    transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+            .game-icons
+                background: #007474
+                width: 320px
+                height: 320px
+                border-radius: 300px
+                position: relative
+                text-align: center
+                transition: 0.3s
+                opacity: 0
+                i
+                    font-size: 35px
+                    color: #fff
+                    position: absolute
+                    cursor: pointer
+                    p
+                        font-family: Arial
+                        font-size: 10px
+                    &:hover
+                        background: #fff
+                        color: #007474
+                        width: 80px
+                        height: 80px
+                        border-radius: 50px
+                        padding-top: 10px
+                        border: 3px solid #007474
+                        font-size: 45px
+                .fa-buromobelexperte
+                    margin-left: -25px
+                    margin-top: 10px
+                    &:hover
+                        margin-left: -37px
+                        margin-top: -30px
+                        padding-top: 10px
+                        color: #0012b1
+                        font-size: 40px
+                .fa-html5
+                    margin-top: 125px
+                    margin-left: 105px
+                    &:hover
+                        margin-top: 105px
+                        padding-top: 10px
+                        color: #fa6400
+                .fa-css3-alt 
+                    margin-top: 245px
+                    margin-left: 50px
+                    &:hover
+                        padding-top: 10px
+                        margin-top: 240px
+                        margin-left: 50px
+                        color: #006efd
+                .fa-bootstrap 
+                    margin-top: 250px
+                    margin-left: -85px
+                    &:hover
+                        padding-top: 10px
+                        margin-left: -120px
+                        color: #8400ff
+                .fa-js
+                    margin-top: 125px
+                    margin-left: -145px
+                    &:hover
+                        padding-top: 10px
+                        margin-top: 110px
+                        margin-left: -195px
+                        color: #ffd900
+            .temp-icons
+                background: #004674
+                width: 320px
+                height: 320px
+                border-radius: 300px
+                position: relative
+                text-align: center
+                transition: 0.3s
+                opacity: 0
+                i
+                    font-size: 35px
+                    color: #fff
+                    position: absolute
+                    cursor: pointer
+                    p
+                        font-family: Arial
+                        font-size: 10px
+                    &:hover
+                        background: #fff
+                        color: #004674
+                        width: 80px
+                        height: 80px
+                        border-radius: 50px
+                        padding-top: 10px
+                        border: 3px solid #004674
+                        font-size: 45px
+                .fa-shopify
+                    margin-left: -20px
+                    margin-top: 10px
+                    &:hover
+                        margin-left: -35px
+                        margin-top: -30px
+                        padding-top: 10px
+                        color: #3d29af
+                        font-size: 40px
+                .fa-bitcoin 
+                    margin-top: 170px
+                    margin-left: 100px
+                    &:hover
+                        padding-top: 10px
+                        margin-top: 150px
+                        margin-left: 110px
+                        color: #ffd000
+                .fa-42-group
+                    margin-top: 180px
+                    margin-left: -145px
+                    &:hover
+                        padding-top: 10px
+                        margin-top: 180px
+                        margin-left: -180px
+                        color: #006efd
+            @keyframes rot
+                0%
+                    transform: rotate(0deg)
+                100%
+                    transform: rotate(360deg)
+
+            .prom-active
+                opacity: 1
+                animation: rot 1s 0s forwards
+                box-shadow: 0 0 20px 10px rgba(0, 0, 0, 0.2)
+            
+            .main-item
+                position: absolute
+                background: #fff
+                width: 200px
+                height: 200px
+                top: 60px
+                border-radius: 100px
+                left: 0
+                right: 0
+                margin-left: auto
+                margin-right: auto
+                cursor: pointer
+                .text
+                    width: 170px
+                    height: 170px
+                    background: $secondColor
+                    color: #fff
+                    position: relative
+                    top: 15px
+                    left: 15px
+                    border-radius: 100px
+                    i
+                        font-size: 50px
+                        margin-top: 45px
+                    p
+                        font-weight: 600
+            #game-logo
+                .text
+                    background: #007474
+            #temp-logo
+                .text
+                    background: #004674
 
 .main-about
     width: 100%
@@ -414,7 +579,7 @@ footer
         height: 50vh
         background: #090979
         clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%)
-        margin-top: 150px
+        margin-top: 100px
         .about-item
             margin-left: auto
             margin-right: auto
@@ -492,38 +657,82 @@ footer
         img
             width: 150px
     .paragrafs
+        display: none
+    .paragrafs2
+        display: block
         padding: 100px 0
+        .paragrafs-items
+            a
+                text-decoration: none
+                color: #000
     .paragrafs-buttons
+        text-align: center
         button
-            font-size: 17px
-            width: 170px
+            font-size: 20px
+            background: $transparent
+            width: 200px
+            padding: 7px 0
+            border: none
+            border-bottom: 3px solid $secondColor
             margin-right: 30px
+            &:last-child
+                margin-right: 0
     .carousel
-        width: 700px
+        width: 800px
+        text-align: center
+        margin: auto
         .title
-            font-size: 27px
+            font-size: 30px
+            color: $secondColor
+            padding: 30px 0
         button
+            opacity: 1
             i
-                font-size: 35px
+                color: $secondColor
+                font-size: 40px
     .web-logos
+        display: flex
+        justify-content: center
+        align-items: center
         height: 200px
+        transition: 0.3s
         img
-            width: 110px
+            width: 130px
         h1
-            font-size: 21px
+            font-size: 25px
         .logos-item
-            width: 110px
-            margin-right: 40px
-
+            width: 140px
+            text-align: center
+            text-transform: uppercase
+            font-weight: bold
+            margin-right: 50px
+            &:last-child
+                margin-right: 0
+        
     .games-logos
-        height: 200px
+        display: flex
+        justify-content: center
+        align-items: center
+        height: 230px
+        transition: 0.3s
         img
-            width: 110px
+            width: 130px
+            margin: 0 auto
         h1
-            font-size: 21px
+            font-size: 22px
         .games-item
-            width: 120px
-            margin-right: 40px
+            width: 140px
+            text-align: center
+            text-transform: uppercase
+            font-weight: bold
+            margin-right: 50px
+            &:last-child
+                margin-right: 0
+    .but-active
+        color: $secondColor
+        font-weight: 600
+    .game
+        display: none           
     footer
         margin-top: 130px
         .fut-img
