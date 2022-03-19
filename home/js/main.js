@@ -85,6 +85,38 @@ linkGame.addEventListener("click", function(){
     webSec.style.display = 'none'
 });
 
+
+document.querySelector('#web-logo').addEventListener("mouseenter", function(){
+    document.querySelector('#web-icon').classList.add('prom-active');
+});
+document.querySelector('#web-icon').addEventListener("mouseleave", function(){
+    document.querySelector('#web-icon').classList.remove('prom-active');
+});
+
+document.querySelector('#game-logo').addEventListener("mouseenter", function(){
+    document.querySelector('#game-icon').classList.add('prom-active');
+});
+document.querySelector('#game-icon').addEventListener("mouseleave", function(){
+    document.querySelector('#game-icon').classList.remove('prom-active');
+});
+
+document.querySelector('#temp-logo').addEventListener("mouseenter", function(){
+    document.querySelector('#temp-icon').classList.add('prom-active');
+});
+document.querySelector('#temp-icon').addEventListener("mouseleave", function(){
+    document.querySelector('#temp-icon').classList.remove('prom-active');
+});
+
+window.addEventListener("scroll", function(){
+    document.querySelector('#web-icon').classList.remove('prom-active', this.scrollY > 100)
+});
+window.addEventListener("scroll", function(){
+    document.querySelector('#game-icon').classList.remove('prom-active', this.scrollY > 100)
+});
+window.addEventListener("scroll", function(){
+    document.querySelector('#temp-icon').classList.remove('prom-active', this.scrollY > 100)
+});
+
 (function () {
     emailjs.init("user_Qz07KcIqlZNoyNuGl");
 })();
@@ -103,7 +135,7 @@ function sendmail() {
         emailjs.send('service_srulwsk', 'template_3ddr04s', contactParams).then(function (res) {
             location.reload();
         })
-}
+};
 
 
 
