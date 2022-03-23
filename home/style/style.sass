@@ -578,6 +578,7 @@ footer
             font-size: 15px
             color: $secondColor
             padding: 5px 20px
+            outline: none
         input
             height: 40px
             &:focus
@@ -585,6 +586,8 @@ footer
         textarea
             resize: none
             height: 150px
+            &:focus
+                border: 2px solid $secondColor
         .formbutton
             background: $transparent
             height: 40px
@@ -593,7 +596,30 @@ footer
             &:hover
                 background: $secondColor
                 color: #fff
-
+    .valid
+        .emailp
+            color: green
+        #email
+            border: 1.8px solid green
+            color: green
+            &:focus
+                border: 2px solid green
+        .namep
+            color: green
+        #name
+            border: 1.8px solid green
+            color: green
+            &:focus
+                border: 2px solid green
+    .invalid
+        .emailp
+            color: red
+        #email
+            border: 1.8px solid red
+            color: red
+            &:focus
+                border: 2px solid red
+    
     
 @media screen and (max-width: 1200px)
     .menu

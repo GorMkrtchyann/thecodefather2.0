@@ -892,6 +892,7 @@ footer hr {
   font-size: 15px;
   color: #4e00ca;
   padding: 5px 20px;
+  outline: none;
 }
 
 .contact form input {
@@ -907,6 +908,10 @@ footer hr {
   height: 150px;
 }
 
+.contact form textarea:focus {
+  border: 2px solid #4e00ca;
+}
+
 .contact form .formbutton {
   background: transparent;
   height: 40px;
@@ -918,6 +923,45 @@ footer hr {
 .contact form .formbutton:hover {
   background: #4e00ca;
   color: #fff;
+}
+
+.contact .valid .emailp {
+  color: green;
+}
+
+.contact .valid #email {
+  border: 1.8px solid green;
+  color: green;
+}
+
+.contact .valid #email:focus {
+  border: 2px solid green;
+}
+
+.contact .valid .namep {
+  color: green;
+}
+
+.contact .valid #name {
+  border: 1.8px solid green;
+  color: green;
+}
+
+.contact .valid #name:focus {
+  border: 2px solid green;
+}
+
+.contact .invalid .emailp {
+  color: red;
+}
+
+.contact .invalid #email {
+  border: 1.8px solid red;
+  color: red;
+}
+
+.contact .invalid #email:focus {
+  border: 2px solid red;
 }
 
 @media screen and (max-width: 1200px) {
