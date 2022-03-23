@@ -258,7 +258,9 @@ html {
 #mob-about {
   display: none;
 }
-
+.about{
+    paddin-bottom: 50px;
+}
 .about-part-1 {
   display: -webkit-box;
   display: -ms-flexbox;
