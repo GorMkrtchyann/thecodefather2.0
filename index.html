@@ -11,6 +11,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 <body onload="window.scrollTo(0, 0);">
 <div class="body"> 
@@ -61,7 +62,7 @@
             <video src="home/video/bkvideo.mp4" autoplay muted loop></video>
         </div>
 
-        <div class="home-text">
+        <div class="home-text" >
             <h1>The CodeFather</h1>
             <hr>
             <p>Բարև և բարի գալուստ The CodeFather կայք որտեղ կարող եք սովորել և զարգացնել ձեր ծրագարվորման գիտելիքները։</p>
@@ -79,7 +80,7 @@
 
     <section class="about" id="about">
         <div class="about-part-1">
-            <div class="block-2 block">
+            <div class="block-2 block" data-aos="fade-right">
                 <img src="home/images/vectors/seo.png" alt="">
                 <div class="block-text">
                     <h2><b>Զ</b>արգացնող <b>Խ</b>աղեր</h2>
@@ -88,7 +89,7 @@
                 </div>
             </div>
     
-            <div class="block-1 block">
+            <div class="block-1 block" data-aos="fade-up">
                 <img src="home/images/vectors/web-developer.png" alt="">
                 <div class="block-text">
                     <h2><b>Վ</b>եբ <b>Ծ</b>րագարվորում</h2>
@@ -97,7 +98,7 @@
                 </div>
             </div>
     
-            <div class="block-3 block">
+            <div class="block-3 block" data-aos="fade-left">
                 <img src="home/images/vectors/website-recovery.png" alt="">
                 <div class="block-text">
                     <h2><b>Պ</b>ատրաստի <b>Կ</b>այքերի <b>Թ</b>եմպլեյտներ</h2>
@@ -256,7 +257,7 @@
 
     <div class="paragrafs" id="paragrafs">
         <div class="container">
-            <div class="items">
+            <div class="items" data-aos="zoom-in">
                 <div class="icons" id="web-icon">
                     <a href="https://gormkrtchyann.github.io/HTMLLesson/" target="_black">
                         <i class="fa-brands fa-html5"></i>
@@ -274,7 +275,7 @@
                 </div>
             </div>
 
-            <div class="items">
+            <div class="items" data-aos="zoom-in">
                 <div class="game-icons" id="game-icon">
                     <a href="games/flexboxdevelopers/index.html" target="_black">
                         <i class="fa-brands fa-buromobelexperte">
@@ -310,7 +311,7 @@
             </div>
 
 
-            <div class="items">
+            <div class="items" data-aos="zoom-in">
                 <div class="temp-icons" id="temp-icon">
                     <a href="https://gormkrtchyann.github.io/templates/" target="_black">
                         <i class="fa-brands fa-shopify">
@@ -337,7 +338,7 @@
         </div>
         
         
-        <div class="codeeditor">
+        <div class="codeeditor" data-aos="flip-up">
         <div class="codeeditor-main">
             <div class="codeeditor-logo">
                 <div class="main">
@@ -415,10 +416,13 @@
     <script src="home/js/main.js"></script>
 
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script type="text/javascript">
     (function() {
         emailjs.init("Qz07KcIqlZNoyNuGl");
     })();
+
+    AOS.init();
     </script>
 </body>
 </html>
