@@ -265,7 +265,7 @@ html {
   display: flex;
   -ms-flex-pack: distribute;
       justify-content: space-around;
-  height: 90vh;
+  height: 100vh;
   padding: 100px 0;
   background: url(../images/background/background.jpg);
   background-repeat: no-repeat;
@@ -275,7 +275,7 @@ html {
 }
 
 .block {
-  width: 350px;
+  width: 300px;
   text-align: center;
   line-height: 25px;
 }
@@ -675,44 +675,6 @@ html {
   background: #004674;
 }
 
-.main-about {
-  width: 100%;
-  height: 50vh;
-  background: #090979;
-  -webkit-clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-          clip-path: polygon(0 20%, 100% 0, 100% 80%, 0% 100%);
-  margin-top: 100px;
-}
-
-.main-about .about-item {
-  margin-left: auto;
-  margin-right: auto;
-  left: 0;
-  right: 0;
-  position: absolute;
-  margin-top: 80px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-}
-
-.main-about p {
-  color: #fff;
-  width: 550px;
-  font-size: 15px;
-}
-
-.main-about img {
-  width: 200px;
-  margin-right: 20px;
-}
-
 .codeeditor {
   padding-top: 70px;
   width: 700px;
@@ -964,6 +926,26 @@ footer hr {
   border: 2px solid red;
 }
 
+@media screen and (max-width: 1366px) {
+  .home-text {
+    max-width: 550px;
+  }
+  .home-text h1 {
+    font-size: 60px;
+  }
+  .home-text p {
+    font-size: 15px;
+    margin-top: 20px;
+  }
+  .home-text hr {
+    width: 150px;
+  }
+  .home-text i {
+    font-size: 32px;
+    margin-left: -10px;
+  }
+}
+
 @media screen and (max-width: 1200px) {
   .menu {
     width: 800px;
@@ -1035,111 +1017,169 @@ footer hr {
   }
   .paragrafs2 {
     display: block;
-    padding: 100px 0;
+    padding: 10px 0 30px;
   }
-  .paragrafs2 .paragrafs-items a {
-    text-decoration: none;
-    color: #000;
+  .paragrafs2 .paragrafs-items {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
   }
-  .paragrafs-buttons {
+  .paragrafs2 .paragrafs-items .pitem {
+    width: 300px;
+    height: 100px;
     text-align: center;
+    color: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    position: relative;
+    -webkit-box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+            box-shadow: 0 0 10px 3px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    -webkit-transition: 0.3s;
+    transition: 0.3s;
+    margin-bottom: 15px;
   }
-  .paragrafs-buttons button {
-    font-size: 20px;
-    background: transparent;
-    width: 200px;
-    padding: 7px 0;
-    border: none;
-    border-bottom: 3px solid #4e00ca;
-    margin-right: 30px;
+  .paragrafs2 .paragrafs-items .pitem .back {
+    width: 300px;
+    height: 600px;
+    background-repeat: no-repeat;
+    background: url(../images/background/webback.png);
+    opacity: 0.2;
   }
-  .paragrafs-buttons button:last-child {
-    margin-right: 0;
+  .paragrafs2 .paragrafs-items .pitem .title {
+    position: absolute;
+    top: 0;
+    height: 100px;
+    width: 300px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
-  .carousel {
-    width: 800px;
-    text-align: center;
-    margin: auto;
-  }
-  .carousel .title {
+  .paragrafs2 .paragrafs-items .pitem .title h1 {
     font-size: 30px;
-    color: #4e00ca;
-    padding: 30px 0;
   }
-  .carousel button {
-    opacity: 1;
-  }
-  .carousel button i {
-    color: #4e00ca;
-    font-size: 40px;
-  }
-  .web-logos {
+  .paragrafs2 .paragrafs-items .pitem .itemi {
+    position: absolute;
+    width: 300px;
+    height: 500px;
+    top: 100px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    margin-top: 20px;
+  }
+  .paragrafs2 .paragrafs-items .pitem .itemi a {
+    text-decoration: none;
+  }
+  .paragrafs2 .paragrafs-items .pitem .itemi .item {
+    width: 130px;
+    height: 130px;
+    background: rgba(255, 255, 255, 0.2);
+    -webkit-backdrop-filter: blur(5px);
+            backdrop-filter: blur(5px);
+    border-radius: 20px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
-    height: 200px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+    position: relative;
+    overflow: hidden;
+    z-index: 0;
   }
-  .web-logos img {
-    width: 130px;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item p {
+    color: #fff;
+    line-height: 10px;
   }
-  .web-logos h1 {
-    font-size: 25px;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item img {
+    width: 70px;
+    -webkit-filter: drop-shadow(0 10px 7px #00000044);
+            filter: drop-shadow(0 10px 7px #00000044);
   }
-  .web-logos .logos-item {
-    width: 140px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 50px;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .dec {
+    width: 60px;
+    height: 60px;
+    position: absolute;
+    background: #ff6600;
+    border-radius: 50px;
+    -webkit-box-shadow: 0 0 20px 10px #ff6600;
+            box-shadow: 0 0 20px 10px #ff6600;
+    -webkit-filter: blur(5px);
+            filter: blur(5px);
+    z-index: -1;
+    top: 100px;
+    left: -10px;
+    opacity: 0.2;
   }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .s {
+    background: #0077ff;
+    -webkit-box-shadow: 0 0 20px 10px #0077ff;
+            box-shadow: 0 0 20px 10px #0077ff;
   }
-  .games-logos {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
-    height: 230px;
-    -webkit-transition: 0.3s;
-    transition: 0.3s;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .j {
+    background: #ffbb00;
+    -webkit-box-shadow: 0 0 20px 10px #ffbb00;
+            box-shadow: 0 0 20px 10px #ffbb00;
   }
-  .games-logos img {
-    width: 130px;
-    margin: 0 auto;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .b {
+    background: #7700ff;
+    -webkit-box-shadow: 0 0 20px 10px #7700ff;
+            box-shadow: 0 0 20px 10px #7700ff;
   }
-  .games-logos h1 {
-    font-size: 22px;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .sc {
+    background: #ae00ff;
+    -webkit-box-shadow: 0 0 20px 10px #ae00ff;
+            box-shadow: 0 0 20px 10px #ae00ff;
   }
-  .games-logos .games-item {
-    width: 140px;
-    text-align: center;
-    text-transform: uppercase;
-    font-weight: bold;
-    margin-right: 50px;
+  .paragrafs2 .paragrafs-items .pitem .itemi .item .t {
+    background: #fff;
+    -webkit-box-shadow: 0 0 20px 10px #fff;
+            box-shadow: 0 0 20px 10px #fff;
   }
-  .games-logos .games-item:last-child {
-    margin-right: 0;
+  .paragrafs2 .paragrafs-items .web-section {
+    background: linear-gradient(124deg, #0f0024 0%, #430979 52%, #9100ff 100%);
   }
-  .but-active {
-    color: #4e00ca;
-    font-weight: 600;
+  .paragrafs2 .paragrafs-items .game-section {
+    background: linear-gradient(125deg, #002410 0%, #006553 52%, #028164 100%);
   }
-  .game {
-    display: none;
+  .paragrafs2 .paragrafs-items .game-section .back {
+    background: url(../images/background/gameback.png);
+  }
+  .paragrafs2 .paragrafs-items .game-section .itemi .item p {
+    line-height: 17px;
+  }
+  .paragrafs2 .paragrafs-items .game-section .itemi .item p:first-child {
+    margin-bottom: 3px;
+  }
+  .paragrafs2 .paragrafs-items .temp-section {
+    background: linear-gradient(125deg, #001d24 0%, #10617c 49%, #006383 100%);
+  }
+  .paragrafs2 .paragrafs-items .temp-section .back {
+    background: url(../images/background/tempback.png);
+  }
+  .paragrafs2 .paragrafs-items .pitem-active {
+    height: 600px;
   }
   footer {
     margin-top: 130px;
@@ -1166,6 +1206,17 @@ footer hr {
   }
   footer p {
     font-size: 13px;
+  }
+}
+
+@media screen and (max-width: 1024px) {
+  .paragrafs2 .paragrafs-items {
+    width: 300px;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0 auto;
   }
 }
 
@@ -1230,8 +1281,18 @@ footer hr {
   }
   #mob-about {
     width: 450px;
-    margin-top: 80px;
+    height: 400px;
     display: block;
+    margin: 0 auto;
+    padding: 70px 0 20px;
+    margin-bottom: 0;
+  }
+  #mob-about button {
+    opacity: 1;
+  }
+  #mob-about button i {
+    color: #4e00ca;
+    font-size: 40px;
   }
   .block {
     width: 300px;
@@ -1252,56 +1313,6 @@ footer hr {
   }
   .block-2 img {
     width: 300px;
-  }
-  .paragrafs {
-    padding: 100px 0;
-  }
-  .paragrafs-buttons button {
-    font-size: 15px;
-    width: 150px;
-    margin-right: 10px;
-  }
-  .carousel {
-    width: 500px;
-  }
-  .carousel .title {
-    font-size: 25px;
-    margin-bottom: -10px;
-  }
-  .carousel button i {
-    font-size: 33px;
-  }
-  .web-logos {
-    height: 170px;
-  }
-  .web-logos img {
-    width: 100px;
-  }
-  .web-logos h1 {
-    font-size: 19px;
-  }
-  .web-logos .logos-item {
-    width: 110px;
-    margin-right: 20px;
-  }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
-  }
-  .games-logos {
-    height: 170px;
-  }
-  .games-logos img {
-    width: 90px;
-  }
-  .games-logos h1 {
-    font-size: 19px;
-  }
-  .games-logos .games-item {
-    width: 100px;
-    margin-right: 40px;
-  }
-  .games-logos .games-item:last-child {
-    margin-right: 0;
   }
   .contact h1 {
     font-size: 25px;
@@ -1345,56 +1356,6 @@ footer hr {
   .home-text i {
     font-size: 30px;
     margin-left: 0;
-  }
-  .paragrafs {
-    padding: 100px 0;
-  }
-  .paragrafs-buttons button {
-    font-size: 15px;
-    width: 150px;
-    margin-right: 10px;
-  }
-  .carousel {
-    width: 500px;
-  }
-  .carousel .title {
-    font-size: 25px;
-    margin-bottom: -10px;
-  }
-  .carousel button i {
-    font-size: 33px;
-  }
-  .web-logos {
-    height: 170px;
-  }
-  .web-logos img {
-    width: 100px;
-  }
-  .web-logos h1 {
-    font-size: 19px;
-  }
-  .web-logos .logos-item {
-    width: 110px;
-    margin-right: 20px;
-  }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
-  }
-  .games-logos {
-    height: 170px;
-  }
-  .games-logos img {
-    width: 90px;
-  }
-  .games-logos h1 {
-    font-size: 19px;
-  }
-  .games-logos .games-item {
-    width: 100px;
-    margin-right: 40px;
-  }
-  .games-logos .games-item:last-child {
-    margin-right: 0;
   }
   .contact h1 {
     font-size: 25px;
@@ -1447,55 +1408,10 @@ footer hr {
   }
   #mob-about {
     width: 400px;
-    margin-top: 80px;
     line-height: 15px;
   }
   #mob-about .block {
     line-height: 20px;
-  }
-  .paragrafs-buttons button {
-    font-size: 15px;
-    width: 120px;
-    margin-right: 5px;
-  }
-  .carousel {
-    width: 400px;
-  }
-  .carousel .title {
-    font-size: 23px;
-    margin-bottom: -20px;
-  }
-  .carousel button i {
-    font-size: 30px;
-  }
-  .web-logos {
-    height: 170px;
-  }
-  .web-logos img {
-    width: 80px;
-  }
-  .web-logos h1 {
-    font-size: 15px;
-  }
-  .web-logos .logos-item {
-    width: 90px;
-    margin-right: 10px;
-  }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
-  }
-  .games-logos {
-    height: 170px;
-  }
-  .games-logos img {
-    width: 80px;
-  }
-  .games-logos h1 {
-    font-size: 15px;
-  }
-  .games-logos .games-item {
-    width: 90px;
-    margin-right: 10px;
   }
   .contact h1 {
     font-size: 20px;
@@ -1516,12 +1432,14 @@ footer hr {
     width: 400%;
   }
   #mob-about {
-    width: 400px;
-    margin-top: 80px;
+    width: 370px;
     line-height: 15px;
   }
   #mob-about .block {
     line-height: 20px;
+  }
+  #mob-about button i {
+    font-size: 30px;
   }
   .contact h1 {
     font-size: 23px;
@@ -1567,15 +1485,12 @@ footer hr {
   }
   #mob-about {
     width: 300px;
-    margin-top: 80px;
     line-height: 15px;
-    margin-bottom: -70px;
   }
   #mob-about .block {
     line-height: 20px;
     width: 250px;
     margin: 0 auto;
-    height: 350px;
   }
   #mob-about .block .block-text {
     margin-top: 20px;
@@ -1591,53 +1506,6 @@ footer hr {
   }
   #mob-about .block-2 img {
     width: 230px;
-  }
-  .paragrafs {
-    margin-bottom: -50px;
-  }
-  .paragrafs-buttons button {
-    font-size: 15px;
-    width: 110px;
-    margin-right: 3px;
-  }
-  .carousel {
-    width: 350px;
-  }
-  .carousel .title {
-    font-size: 23px;
-    margin-bottom: -20px;
-  }
-  .carousel button i {
-    font-size: 30px;
-  }
-  .web-logos {
-    height: 150px;
-  }
-  .web-logos img {
-    width: 70px;
-  }
-  .web-logos h1 {
-    font-size: 13px;
-  }
-  .web-logos .logos-item {
-    width: 70px;
-    margin-right: 10px;
-  }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
-  }
-  .games-logos {
-    height: 150px;
-  }
-  .games-logos img {
-    width: 70px;
-  }
-  .games-logos h1 {
-    font-size: 13px;
-  }
-  .games-logos .games-item {
-    width: 70px;
-    margin-right: 10px;
   }
   .contact h1 {
     font-size: 22px;
@@ -1676,53 +1544,6 @@ footer hr {
   .home-text i {
     font-size: 25px;
     margin-left: 0;
-  }
-  .paragrafs {
-    margin-bottom: -50px;
-  }
-  .paragrafs-buttons button {
-    font-size: 12px;
-    width: 90px;
-    margin-right: 3px;
-  }
-  .carousel {
-    width: 300px;
-  }
-  .carousel .title {
-    font-size: 20px;
-    margin-bottom: -20px;
-  }
-  .carousel button i {
-    font-size: 30px;
-  }
-  .web-logos {
-    height: 120px;
-  }
-  .web-logos img {
-    width: 60px;
-  }
-  .web-logos h1 {
-    font-size: 13px;
-  }
-  .web-logos .logos-item {
-    width: 70px;
-    margin-right: 10px;
-  }
-  .web-logos .logos-item:last-child {
-    margin-right: 0;
-  }
-  .games-logos {
-    height: 120px;
-  }
-  .games-logos img {
-    width: 60px;
-  }
-  .games-logos h1 {
-    font-size: 13px;
-  }
-  .games-logos .games-item {
-    width: 70px;
-    margin-right: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */

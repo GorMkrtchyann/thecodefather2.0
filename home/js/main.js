@@ -1,25 +1,3 @@
-let web = document.querySelector('#web');
-let game = document.querySelector('#game');
-
-let webSec = document.querySelector('.web');
-let gameSec = document.querySelector('.game');
-
-web.addEventListener("click", function(){
-    game.classList.remove('but-active');
-    web.classList.add('but-active');
-
-    gameSec.style.display = 'none'
-    webSec.style.display = 'block'
-});
-
-game.addEventListener("click", function(){
-    web.classList.remove('but-active');
-    game.classList.add('but-active');
-
-    gameSec.style.display = 'block'
-    webSec.style.display = 'none'
-});
-
 let scrollTop = document.querySelector('.scroll-top');
 
 window.addEventListener("scroll", function(){
@@ -32,6 +10,21 @@ window.addEventListener("scroll", function(){
     menuStiky.classList.toggle('stiky', scrollY > 100)
 });
 
+document.querySelector('.web-section').addEventListener("click", function(){
+    document.querySelector('.web-section').classList.toggle('pitem-active');
+    document.querySelector('.game-section').classList.remove('pitem-active');
+    document.querySelector('.temp-section').classList.remove('pitem-active');
+});
+document.querySelector('.game-section').addEventListener("click", function(){
+    document.querySelector('.game-section').classList.toggle('pitem-active');
+    document.querySelector('.web-section').classList.remove('pitem-active');
+    document.querySelector('.temp-section').classList.remove('pitem-active');
+});
+document.querySelector('.temp-section').addEventListener("click", function(){
+    document.querySelector('.temp-section').classList.toggle('pitem-active');
+    document.querySelector('.web-section').classList.remove('pitem-active');
+    document.querySelector('.game-section').classList.remove('pitem-active');
+});
 
 let mobMenu = document.querySelector('.mob-menu');
 
@@ -65,25 +58,6 @@ function activeMobMenu(){
 }
 activeMobMenu();
 window.addEventListener("scroll", activeMobMenu);
-
-let linkGame = document.querySelector('#linkgame');
-let linkWeb = document.querySelector('#linkweb');
-
-linkWeb.addEventListener("click", function(){
-    game.classList.remove('but-active');
-    web.classList.add('but-active');
-
-    gameSec.style.display = 'none'
-    webSec.style.display = 'block'
-});
-
-linkGame.addEventListener("click", function(){
-    web.classList.remove('but-active');
-    game.classList.add('but-active');
-
-    gameSec.style.display = 'block'
-    webSec.style.display = 'none'
-});
 
 
 document.querySelector('#web-logo').addEventListener("mouseenter", function(){
@@ -150,11 +124,7 @@ function Emailvalidation(){
         form.classList.remove("valid")
         form.classList.add("invalid")
     }
-}
-
-
-
-
+};
 
 
 

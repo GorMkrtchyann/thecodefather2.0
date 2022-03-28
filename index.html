@@ -13,7 +13,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Cinzel+Decorative:wght@700&display=swap" rel="stylesheet">
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
-<body onload="window.scrollTo(0, 0);">
+<body onload="windoww.scrollTo(0, 0);">
 <div class="body"> 
     <nav class="mobile-menu">
         <div class="mob-menu">
@@ -155,103 +155,122 @@
 
 <section>
     <div class="paragrafs2" id="paragrafs2">
-        <div class="paragrafs-buttons">
-            <button id="web" class="but-active">Վեբ Դասեր</button>
-            <button id="game">Խաղեր</button>
-            <button>Թեմպլեյթներ</button>
-        </div>
         <div class="paragrafs-items">
-            <div id="demo" class="carousel slide web" data-bs-ride="carousel">
-              <h1 class="title">Վեբ Դասեր</h1>
-                <div class="carousel-inner">
-                  <div class="carousel-item active">
-                    <div class="web-logos">
-                        <div class="logos-item">
-                            <h1>html</h1>
-                            <img src="home/images/logos/htmllogo.png" alt="">
+            <div class="web-section pitem">
+                <div class="back"></div>
+                <div class="title">
+                    <h1>Վեբ Դասեր</h1>
+                </div>
+                <div class="web-items itemi">
+                    <a href="https://gormkrtchyann.github.io/HTMLLesson/" target="_blank">
+                        <div class="item">
+                            <p>HTML5</p>
+                            <img src="home/images/logos/htmllogo.png" alt="html">
+                            <div class="dec"></div>
                         </div>
-                        <div class="logos-item">
-                            <h1>css</h1>
-                          <img src="home/images/logos/css.png" alt="">
-                      </div>
-                      <div class="logos-item">
-                          <h1>JavaScript</h1>
-                          <img src="home/images/logos/js.png" alt="">
-                      </div>
+                    </a>
+                    <div class="item">
+                        <p>CSS</p>
+                        <img src="home/images/logos/css.png" alt="css">
+                        <div class="dec s"></div>
                     </div>
-                  </div>
-                  <div class="carousel-item">
-                    <div class="web-logos">
-                      <div class="logos-item">
-                          <h1>bootstrap</h1>
-                          <img src="home/images/logos/boot.png" alt="">
-                      </div>
-                      <div class="logos-item">
-                          <h1>sass</h1>
-                          <img src="home/images/logos/sass.png" alt="">
-                      </div>
+                    <div class="item">
+                        <p>JavaScript</p>
+                        <img src="home/images/logos/js.png" alt="javascript js">
+                        <div class="dec j"></div>
                     </div>
-                  </div>
+                    <div class="item">
+                        <p>Bootstrap 5</p>
+                        <img src="home/images/logos/boot.png" alt="bootstrap">
+                        <div class="dec b"></div>
+                    </div>
+                    <div class="item">
+                        <p>SASS</p>
+                        <img src="home/images/logos/sass.png" alt="sass scss">
+                        <div class="dec sc"></div>
+                    </div>
                 </div>
-              
-                <button class="carousel-control-prev" type="button" data-bs-target="#demo" data-bs-slide="prev">
-                  <i class="fa-solid fa-angle-left"></i>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#demo" data-bs-slide="next">
-                    <i class="fa-solid fa-angle-right"></i>
-                </button>
-              </div>
+            </div>
+            <div class="game-section pitem">
+                <div class="back"></div>
+                <div class="title">
+                    <h1>Խաղեր</h1>
+                </div>
+                <div class="game-items itemi">
+                    <a href="games/flexboxdevelopers/index.html" target="_blank">
+                        <div class="item">
+                            <p>FlexBox Developers</p>
+                            <img src="home/images/logos/game01.png" alt="flexbox flex">
+                            <div class="dec s"></div>
+                        </div>
+                    </a>
+                    <a href="games/quiz/Html Quiz/index.html" target="_blank">
+                        <div class="item">
+                            <p>HTML5 Quiz</p>
+                            <img src="home/images/logos/htmlquiz.png" alt="html quiz">
+                            <div class="dec"></div>
+                        </div>
+                    </a>
+                    <a href="games/quiz/Css Quiz/index.html" target="_blank">
+                        <div class="item">
+                            <p>CSS Quiz</p>
+                            <img src="home/images/logos/cssquiz.png" alt="css quzi">
+                            <div class="dec s"></div>
+                        </div>
+                    </a>
+                    <a href="games/quiz/Js Quiz/index.html" target="_blank">
+                        <div class="item">
+                            <p>JavaScript Quiz</p>
+                            <img src="home/images/logos/jsquiz.png" alt="javascript js quiz">
+                            <div class="dec j"></div>
+                        </div>
+                    </a>
+                    <a href="games/quiz/Bootstrap Quiz/index.html" target="_blank">
+                        <div class="item">
+                            <p>Bootstrap Quiz</p>
+                            <img src="home/images/logos/bootstrapquiz.png" alt="bootstrap quiz">
+                            <div class="dec b"></div>
+                        </div>
+                    </a>              
+                </div>
+            </div>
 
-              <div id="demo2" class="carousel slide game" data-bs-ride="carousel">
-                <h1 class="title">Խաղեր</h1>
-                  <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <div class="games-logos">
-                            <a href="games/flexboxdevelopers/index.html" target="_black">
-                                <div class="games-item">
-                                    <h1>FlexBox Developers</h1>
-                                    <img src="home/images/logos/game01.png" alt="">
-                                </div>
-                            </a>
-                            <a href="games/quiz/Html Quiz/index.html" target="_black">
-                                <div class="games-item">
-                                    <h1>html quiz</h1>
-                                    <img src="home/images/logos/htmlquiz.png" alt="">
-                                </div>
-                            </a>
-                            <a href="games/quiz/Css Quiz/index.html" target="_black">
-                                <div class="games-item">
-                                    <h1>css quiz</h1>
-                                    <img src="home/images/logos/cssquiz.png" alt="">
-                                </div>
-                            </a>
-                          </div>
-                    </div>
-                    <div class="carousel-item">
-                        <div class="games-logos">
-                            <a href="games/quiz/Js Quiz/index.html" target="_black">
-                                <div class="games-item">
-                                    <h1>JavaScript quiz</h1>
-                                    <img src="home/images/logos/jsquiz.png" alt="">
-                                </div>
-                            </a>
-                            <a href="games/quiz/Bootstrap Quiz/index.html" target="_black">
-                                <div class="games-item">
-                                    <h1>bootstrap quiz</h1>
-                                    <img src="home/images/logos/bootstrapquiz.png" alt="">
-                                </div>
-                            </a>
-                          </div>
-                    </div>
-                  </div>
-                
-                  <button class="carousel-control-prev" type="button" data-bs-target="#demo2" data-bs-slide="prev">
-                    <i class="fa-solid fa-angle-left"></i>
-                  </button>
-                  <button class="carousel-control-next" type="button" data-bs-target="#demo2" data-bs-slide="next">
-                      <i class="fa-solid fa-angle-right"></i>
-                  </button>
+            <div class="temp-section pitem">
+                <div class="back"></div>
+                <div class="title">
+                    <h1>Թեմպլեյթներ</h1>
                 </div>
+                <div class="temp-items itemi">
+                    <a href="https://gormkrtchyann.github.io/templates/" target="_blank">
+                        <div class="item">
+                            <p>Օնլայն Խանութ</p>
+                            <img src="home/images/logos/shopicon.png" alt="shop">
+                            <div class="dec t"></div>
+                        </div>
+                    </a>
+                    <a href="https://gormkrtchyann.github.io/templates/" target="_blank">
+                        <div class="item">
+                            <p>Պորֆոլիո</p>
+                            <img src="home/images/logos/portolio.png" alt="portfolio">
+                            <div class="dec t"></div>
+                        </div>
+                    </a>
+                    <a href="https://gormkrtchyann.github.io/templates/" target="_blank">
+                        <div class="item">
+                            <p>Դասական</p>
+                            <img src="home/images/logos/temp.png" alt="template">
+                            <div class="dec t"></div>
+                        </div>
+                    </a>
+                    <a href="https://gormkrtchyann.github.io/templates/" target="_blank">
+                        <div class="item">
+                            <p>Ավելին</p>
+                            <img src="home/images/logos/seeall.png" alt="free">
+                            <div class="dec t"></div>
+                        </div>
+                    </a>
+                </div>
+            </div>
         </div>
     </div>
 
