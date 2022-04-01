@@ -470,6 +470,7 @@ html {
 .paragrafs .container .items .game-icons i p {
   font-family: Arial;
   font-size: 10px;
+  font-weight: 200;
 }
 
 .paragrafs .container .items .game-icons i:hover {
@@ -483,16 +484,29 @@ html {
   font-size: 45px;
 }
 
-.paragrafs .container .items .game-icons .fa-buromobelexperte {
-  margin-left: -25px;
-  margin-top: 10px;
+.paragrafs .container .items .game-icons .fa-users {
+  margin-left: -70px;
+  margin-top: 15px;
 }
 
-.paragrafs .container .items .game-icons .fa-buromobelexperte:hover {
-  margin-left: -37px;
-  margin-top: -30px;
+.paragrafs .container .items .game-icons .fa-users:hover {
+  margin-left: -87px;
+  margin-top: -23px;
   padding-top: 10px;
   color: #0012b1;
+  font-size: 40px;
+}
+
+.paragrafs .container .items .game-icons .fa-brain {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.paragrafs .container .items .game-icons .fa-brain:hover {
+  margin-left: 50px;
+  margin-top: -5px;
+  padding-top: 10px;
+  color: #fca400;
   font-size: 40px;
 }
 

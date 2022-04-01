@@ -26,32 +26,6 @@ document.querySelector('.temp-section').addEventListener("click", function(){
     document.querySelector('.game-section').classList.remove('pitem-active');
 });
 
-document.querySelector('#linkweb').addEventListener("click", function(){
-    document.querySelector('.web-section').classList.toggle('pitem-active');
-    document.querySelector('.game-section').classList.remove('pitem-active');
-    document.querySelector('.temp-section').classList.remove('pitem-active');
-});
-document.querySelector('#linkgame').addEventListener("click", function(){
-    document.querySelector('.game-section').classList.toggle('pitem-active');
-    document.querySelector('.web-section').classList.remove('pitem-active');
-    document.querySelector('.temp-section').classList.remove('pitem-active');
-});
-document.querySelector('#linktemp').addEventListener("click", function(){
-    document.querySelector('.temp-section').classList.toggle('pitem-active');
-    document.querySelector('.web-section').classList.remove('pitem-active');
-    document.querySelector('.game-section').classList.remove('pitem-active');
-});
-
-// window.addEventListener("scroll", function(){
-//     document.querySelector('.web-section').classList.remove('pitem-active', scrollY > 2000)
-// });
-// window.addEventListener("scroll", function(){
-//     document.querySelector('.game-section').classList.remove('pitem-active')
-// });
-// window.addEventListener("scroll", function(){
-//     document.querySelector('.temp-section').classList.remove('pitem-active')
-// });
-
 let mobMenu = document.querySelector('.mob-menu');
 
 mobMenu.addEventListener("click", function(){
