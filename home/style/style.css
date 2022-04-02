@@ -470,7 +470,6 @@ html {
 .paragrafs .container .items .game-icons i p {
   font-family: Arial;
   font-size: 10px;
-  font-weight: 200;
 }
 
 .paragrafs .container .items .game-icons i:hover {
@@ -484,29 +483,16 @@ html {
   font-size: 45px;
 }
 
-.paragrafs .container .items .game-icons .fa-users {
-  margin-left: -70px;
-  margin-top: 15px;
+.paragrafs .container .items .game-icons .fa-buromobelexperte {
+  margin-left: -25px;
+  margin-top: 10px;
 }
 
-.paragrafs .container .items .game-icons .fa-users:hover {
-  margin-left: -87px;
-  margin-top: -23px;
+.paragrafs .container .items .game-icons .fa-buromobelexperte:hover {
+  margin-left: -37px;
+  margin-top: -30px;
   padding-top: 10px;
   color: #0012b1;
-  font-size: 40px;
-}
-
-.paragrafs .container .items .game-icons .fa-brain {
-  margin-left: 50px;
-  margin-top: 25px;
-}
-
-.paragrafs .container .items .game-icons .fa-brain:hover {
-  margin-left: 50px;
-  margin-top: -5px;
-  padding-top: 10px;
-  color: #fca400;
   font-size: 40px;
 }
 
@@ -691,7 +677,7 @@ html {
 
 .codeeditor {
   padding-top: 70px;
-  width: 700px;
+  width: 600px;
   margin: 0 auto;
 }
 
@@ -704,9 +690,8 @@ html {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  width: 700px;
+  width: 600px;
   height: 185px;
-  background: #020024;
   background: linear-gradient(124deg, #020024 0%, #090979 35%, #00d4ff 100%);
   text-align: center;
   color: #fff;
@@ -734,7 +719,7 @@ html {
 
 .codeeditor .codeeditor-main .codeeditor-logo .codeeditor-text p {
   display: block;
-  width: 500px;
+  width: 400px;
 }
 
 .codeeditor .codeeditor-main .codeeditor-logo .codeeditor-text button {
@@ -743,6 +728,61 @@ html {
   border: none;
   border-radius: 50px;
   margin-left: -60px;
+  cursor: pointer;
+}
+
+.framwork {
+  padding-top: 70px;
+  width: 600px;
+  margin: 0 auto;
+}
+
+.framwork .framwork-main {
+  height: 180px;
+  position: relative;
+}
+
+.framwork .framwork-main .framwork-logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 600px;
+  height: 185px;
+  background: linear-gradient(125deg, #020024 0%, #ff2f2f 0%, #ffb738 100%);
+  text-align: center;
+  color: #fff;
+  border-radius: 100px;
+  border: 2px solid #fff;
+  overflow: hidden;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.framwork .framwork-main .framwork-logo img {
+  width: 80px;
+  margin-top: 35px;
+}
+
+.framwork .framwork-main .framwork-logo .main {
+  margin-left: 33px;
+}
+
+.framwork .framwork-main .framwork-logo .framwork-text {
+  font-weight: 600;
+  text-align: center;
+  padding: 50px 40px 0 20px;
+}
+
+.framwork .framwork-main .framwork-logo .framwork-text p {
+  display: block;
+  width: 400px;
+}
+
+.framwork .framwork-main .framwork-logo .framwork-text button {
+  padding: 7px 25px;
+  background: #fff;
+  border: none;
+  border-radius: 50px;
   cursor: pointer;
 }
 
