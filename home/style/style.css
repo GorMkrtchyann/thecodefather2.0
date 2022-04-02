@@ -357,6 +357,11 @@ html {
   cursor: pointer;
 }
 
+.paragrafs .container .items .icons i p {
+  font-size: 10px;
+  font-family: Arial;
+}
+
 .paragrafs .container .items .icons i:hover {
   background: #fff;
   color: #4e00ca;
@@ -729,6 +734,12 @@ html {
   border-radius: 50px;
   margin-left: -60px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.codeeditor .codeeditor-main .codeeditor-logo .codeeditor-text button:hover {
+  letter-spacing: 3px;
 }
 
 .framwork {
@@ -784,6 +795,12 @@ html {
   border: none;
   border-radius: 50px;
   cursor: pointer;
+  -webkit-transition: 0.3s;
+  transition: 0.3s;
+}
+
+.framwork .framwork-main .framwork-logo .framwork-text button:hover {
+  letter-spacing: 3px;
 }
 
 footer {
@@ -981,6 +998,10 @@ footer hr {
 }
 
 @media screen and (max-width: 1366px) {
+  .paragrafs {
+    padding: 10px 0 100px 0;
+    margin-top: 150px;
+  }
   .home-text {
     max-width: 550px;
   }
