@@ -475,6 +475,7 @@ html {
 .paragrafs .container .items .game-icons i p {
   font-family: Arial;
   font-size: 10px;
+  font-weight: 100;
 }
 
 .paragrafs .container .items .game-icons i:hover {
@@ -488,14 +489,14 @@ html {
   font-size: 45px;
 }
 
-.paragrafs .container .items .game-icons .fa-buromobelexperte {
-  margin-left: -25px;
-  margin-top: 10px;
+.paragrafs .container .items .game-icons .fa-users {
+  margin-left: -70px;
+  margin-top: 15px;
 }
 
-.paragrafs .container .items .game-icons .fa-buromobelexperte:hover {
-  margin-left: -37px;
-  margin-top: -30px;
+.paragrafs .container .items .game-icons .fa-users:hover {
+  margin-left: -87px;
+  margin-top: -23px;
   padding-top: 10px;
   color: #0012b1;
   font-size: 40px;
@@ -510,6 +511,19 @@ html {
   margin-top: 105px;
   padding-top: 10px;
   color: #fa6400;
+}
+
+.paragrafs .container .items .game-icons .fa-brain {
+  margin-left: 50px;
+  margin-top: 25px;
+}
+
+.paragrafs .container .items .game-icons .fa-brain:hover {
+  margin-left: 50px;
+  margin-top: -5px;
+  padding-top: 10px;
+  color: #fca400;
+  font-size: 40px;
 }
 
 .paragrafs .container .items .game-icons .fa-css3-alt {
@@ -744,6 +758,7 @@ html {
 
 .framwork {
   padding-top: 70px;
+  padding-bottom: 30px;
   width: 600px;
   margin: 0 auto;
 }
@@ -1091,6 +1106,7 @@ footer hr {
     display: none;
   }
   .paragrafs2 {
+    margin-top: 80px;
     display: block;
     padding: 10px 0 30px;
   }
@@ -1256,6 +1272,9 @@ footer hr {
   .paragrafs2 .paragrafs-items .pitem-active {
     height: 600px;
   }
+  .content-line2 .codeeditor, .content-line2 .framwork {
+    display: none;
+  }
   footer {
     margin-top: 130px;
   }
@@ -1296,6 +1315,44 @@ footer hr {
 }
 
 @media screen and (max-width: 768px) {
+  .content-line2 .framwork {
+    width: 300px;
+    margin: -50px auto 0;
+    display: block;
+  }
+  .content-line2 .framwork .framwork-main {
+    height: 300px;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    height: 300px;
+    width: 300px;
+    border-radius: 40px;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo img {
+    margin-left: -40px;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo h4 {
+    margin-left: -30px;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo .framwork-text {
+    width: 250px;
+    margin-top: -40px;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo .framwork-text p {
+    width: 250px;
+    margin: 0 auto;
+  }
+  .content-line2 .framwork .framwork-main .framwork-logo .framwork-text button {
+    margin-top: 15px;
+    margin-left: 65px;
+  }
   .back-video {
     top: 0;
   }

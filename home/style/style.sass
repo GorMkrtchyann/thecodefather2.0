@@ -296,6 +296,7 @@ html
                     p
                         font-family: Arial
                         font-size: 10px
+                        font-weight: 100
                     &:hover
                         background: #fff
                         color: #007474
@@ -305,12 +306,12 @@ html
                         padding-top: 10px
                         border: 3px solid #007474
                         font-size: 45px
-                .fa-buromobelexperte
-                    margin-left: -25px
-                    margin-top: 10px
+                .fa-users
+                    margin-left: -70px
+                    margin-top: 15px
                     &:hover
-                        margin-left: -37px
-                        margin-top: -30px
+                        margin-left: -87px
+                        margin-top: -23px
                         padding-top: 10px
                         color: #0012b1
                         font-size: 40px
@@ -321,6 +322,15 @@ html
                         margin-top: 105px
                         padding-top: 10px
                         color: #fa6400
+                .fa-brain
+                    margin-left: 50px
+                    margin-top: 25px
+                    &:hover
+                        margin-left: 50px
+                        margin-top: -5px
+                        padding-top: 10px
+                        color: #fca400
+                        font-size: 40px
                 .fa-css3-alt 
                     margin-top: 245px
                     margin-left: 50px
@@ -484,6 +494,7 @@ html
 
 .framwork
     padding-top: 70px
+    padding-bottom: 30px
     width: 600px    
     margin: 0 auto
     .framwork-main
@@ -712,6 +723,7 @@ footer
     .paragrafs
         display: none
     .paragrafs2
+        margin-top: 80px
         display: block
         padding: 10px 0 30px
         .paragrafs-items
@@ -821,6 +833,10 @@ footer
             .pitem-active
                 height: 600px
                 
+    .content-line2
+        .codeeditor, .framwork
+            display: none
+
     footer
         margin-top: 130px
         .fut-img
@@ -847,6 +863,32 @@ footer
             flex-direction: column
             margin: 0 auto
 @media screen and (max-width: 768px)
+    .content-line2
+        .framwork
+            width: 300px    
+            margin: -50px auto 0
+            display: block
+            .framwork-main
+                height: 300px
+                .framwork-logo
+                    display: flex
+                    flex-direction: column
+                    height: 300px
+                    width: 300px
+                    border-radius: 40px
+                    img
+                        margin-left: -40px
+                    h4
+                        margin-left: -30px
+                    .framwork-text
+                        width: 250px
+                        margin-top: -40px
+                        p
+                            width: 250px
+                            margin: 0 auto
+                        button
+                            margin-top: 15px
+                            margin-left: 65px
     .back-video
         top: 0
         video
@@ -936,6 +978,7 @@ footer
                 display: none
     .main-about
         display: none
+    
     
 @media screen and (max-width: 540px)
     .back-video
